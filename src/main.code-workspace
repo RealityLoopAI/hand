@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../Desktop/project/robot_arm/aero-hand-open-main/firmware/main"
+		},
+		{
+			"name": "hand",
+			"path": ".."
+		}
+	],
+	"settings": {}
+}
