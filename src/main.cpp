@@ -1287,12 +1287,22 @@ void handleMqttCommand(const char* command) {
     buf[0] = 0x06; 
     control_falg = false;
     handleHostFrame(CAPTURE);
+  }
+  else if (strstr(command, "feedback") != NULL) 
+  {
+    mqttClient.publish(topic_push, "{\"hand\": \"hand is OK\"}");
   } 
+
   else if (strstr(command, "test") != NULL) 
   {
     // 测试命令
     Serial.println("MQTT Test OK!");
+
   } 
+  else
+  {
+    
+  }
 }
 
 /**
